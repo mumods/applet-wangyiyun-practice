@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="head">
+    <image mode="widthFix" src="../../static/images/recommendSong/recommendSong.jpg"></image>
+    <view class="date">{{day}} / {{month}}</view>
+  </view>
+  <view class="content">
+    <view class="title">
+      <view>播放全部</view>
+      <view>多选</view>
+    </view>
+      <scroll-view class="scroll" scroll-y="true" enable-flex>
+        <view class="song">
+          <image class="img" src="../../static/images/recommendSong/02.jpg"></image>
+          <view class="name">
+            <view class="singer">dddd</view>
+            <view class="song_name">aaaa</view>
+          </view>
+          <view class="iconfont icon-gengduo"></view>
+        </view>
+        <view class="song">
+          <image class="img" src="../../static/images/recommendSong/02.jpg"></image>
+          <view class="name">
+            <view class="singer">dddd</view>
+            <view class="song_name">aaaa</view>
+          </view>
+          <view class="iconfont icon-gengduo"></view>
+        </view>
+      </scroll-view>
+  </view>
+</view>

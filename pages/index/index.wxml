@@ -1,0 +1,45 @@
+<view class="container">
+  <swiper class="swiper" indicator-dots="true" indicator-color="rgba(255,255,255,.6)" indicator-active-color="#F01313" autoplay="true" interval="5000" circular="true">
+  <swiper-item wx:for="{{banners}}" wx:key='encodeId'>
+  <image mode="widthFix" src="{{item.imageUrl}}"></image>
+  </swiper-item>
+  </swiper>
+  <view class="nav">
+  <view class="font" wx:for="{{nav}}" wx:key="index" bindtap="navi" data-index="{{index}}">
+    <view class="iconfont {{item.class}}"></view>
+    <view class="text">{{item.name}}</view>
+  </view>
+  </view>
+  <view class="introduce">
+    <recommend title="{{value[0].title}}" name="{{value[0].index}}"></recommend>
+    <view class="content">
+      <scroll-view scroll-x class="scroll" enable-flex>
+          <navigator wx:for="{{introduce.result}}" wx:key="index">
+            <view>
+              <image mode="widthFix" src="{{item.picUrl}}"></image>
+            </view>
+            <view class="name">{{item.name}}</view>
+        </navigator>
+      </scroll-view>
+    </view>
+  </view>
+  <recommend title="{{value[1].title}}" name="{{value[1].index}}"></recommend>
+  <view >
+    <swiper class="toplist" circular previous-margin="80rpx" next-margin="80rpx">
+      <swiper-item wx:for="{{toplist}}" wx:key="index">
+      <view class="a">
+        <view class="tophead">{{item.name}}</view>
+        <view class="s">
+        <view class="topcontent" wx:for="{{item.tracks}}" wx:for-item="site" wx:for-index="in" wx:key="in">
+          <view class="topleft"><image mode="widthFix" src="https://p1.music.126.net/_gMDRNW8RoCvJWHi_p51aA==/109951164726735349.jpg"></image></view>
+          <text class="ss">{{in+1}}</text>
+          <view class="topright">{{site.first}}</view>
+          <view>-</view>
+          <view class="f">{{site.second}}</view>
+        </view>
+      </view>
+      </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

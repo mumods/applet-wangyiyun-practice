@@ -1,0 +1,51 @@
+.head{
+  display: flex;
+  padding: 10rpx 20rpx;
+}
+.search{
+  background-color: #fafafa;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 20rpx;
+  padding: 0 10rpx;
+  flex: 1;
+}
+.iconfont{
+  font-size: 35rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.input{
+  font-size: 25rpx;
+}
+.cancel{
+  width: 80rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.content{
+  padding: 20rpx;
+}
+.title{
+  font-size: 32rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10rpx;
+}
+.li{
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #fefefe;
+  font-size: 27rpx;
+}
+.img{
+  width: 50rpx;
+}

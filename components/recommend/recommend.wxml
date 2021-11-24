@@ -1,0 +1,7 @@
+<view>
+<view class="header">{{title}}</view>
+    <view class="con">
+      <view class="intro_left">{{name}}</view>
+      <view class="intro_right">查看更多</view>
+    </view>
+</view>

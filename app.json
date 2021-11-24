@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/video/video",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/song/song"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F01313",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/_shouye.png",
+        "selectedIconPath": "./img/shouye.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "./img/_hanhan-01-01.png",
+        "selectedIconPath": "./img/hanhan-01-01.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "./img/_icon-test.png",
+        "selectedIconPath": "./img/icon-test.png"
+      }
+    ],
+    "color": "#555",
+    "selectedColor": "#F01313"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

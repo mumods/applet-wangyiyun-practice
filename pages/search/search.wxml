@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="head">
+    <view class="search">
+      <view class="iconfont icon-search1 searchIcon"></view>
+      <input class="input" bindinput="search" placeholder="{{placeholder}}" type="text"/>
+    </view>
+    <view class="cancel">取消</view>
+  </view>
+
+  <view class="searchcontent" wx:if="{{searchlistres.length}}">
+    <view class="searchlist" wx:for="{{searchlistres}}" wx:key="index">{{item.name}}</view>
+  </view>
+
+  <view class="content" wx:else>
+    <view class="title">热搜榜</view>
+    <view class="list">
+      <view  class="li" wx:for="{{hotlist}}" wx:key="searchWord">{{index+1}} {{item.searchWord}}
+        <image mode="widthFix" class="img" src="{{item.iconUrl}}" wx:if="{{item.iconUrl}}"></image>
+      </view>
+      
+    </view>
+  </view>
+</view>

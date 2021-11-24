@@ -1,0 +1,29 @@
+/* conponents/recommed/recommed.wxss */
+.header{
+  font-size: 27rpx;
+  color: #666666;
+  padding: 10rpx 10rpx 0 10rpx;
+}
+.con{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10rpx 10rpx 0 10rpx;
+}
+.intro_left{
+  width: 83%;
+  font-size: 35rpx;
+  font-weight: 500;
+}
+.intro_right{
+  float: right;
+  margin-right: 18rpx;
+  width: 130rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  font-size: 24rpx;
+  text-align: center;
+  border: 2rpx solid #555;
+  border-radius: 13rpx;
+  color: #555;
+}
